@@ -1,0 +1,182 @@
+@media(max-width:1100px){
+:root{--wrap:min(100% - 64px,1440px)}.site-header{padding:0 32px;grid-template-columns:1fr auto}.primary-nav{position:fixed;top:0;right:0;width:min(420px,88vw);height:100svh;background:var(--ivory);color:var(--ink);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:80px 55px;gap:20px;transform:translateX(105%);transition:transform .5s var(--ease);box-shadow:-20px 0 50px rgba(0,0,0,.08)}.primary-nav.is-open{transform:translateX(0)}.primary-nav a{font-family:var(--serif);font-size:34px;text-transform:none;letter-spacing:0}.menu-toggle{display:flex;flex-direction:column;gap:6px;border:0;background:transparent;width:40px;height:40px;align-items:center;justify-content:center;cursor:pointer;z-index:2;grid-column:2}.menu-toggle span{width:24px;height:1px;background:currentColor;transition:transform .3s}.menu-toggle[aria-expanded=true] span:first-child{transform:translateY(3.5px) rotate(45deg)}.menu-toggle[aria-expanded=true] span:last-child{transform:translateY(-3.5px) rotate(-45deg)}.header-cta{display:none}.hero-side-note{right:5px}.intro-grid{gap:6%}.intro-content{gap:25px}.intro-image-wrap img{height:470px}.treatment-photo{height:370px}.treatment-feature-tall .treatment-photo{height:520px}.why-content{padding:75px 55px}.maya-grid{gap:8%}.maya-photo img{height:580px}.footer-main{gap:4%}.detail-layout{gap:7%}
+}
+@media(max-width:760px){
+:root{--wrap:calc(100% - 42px)}html{scroll-padding-top:75px}.section-pad{padding:75px 0}.site-header{height:78px;padding:0 21px}.site-header.is-scrolled{height:70px}.brand-mark{width:33px;height:33px;font-size:17px}.brand-copy strong{font-size:8px}.brand-copy small{font-size:6px}.hero{height:94svh;min-height:670px}.hero-image-layer{background-position:61% center}.hero-wash{background:linear-gradient(90deg,rgba(22,20,19,.76),rgba(22,20,19,.28)),linear-gradient(0deg,rgba(22,20,19,.5),transparent 55%)}.hero-inner{align-items:center}.hero-copy{padding-top:60px}.hero h1{font-size:clamp(66px,15vw,100px);line-height:.86}.hero-lede{font-size:12px;max-width:320px}.hero-actions{align-items:flex-start;flex-direction:column;gap:22px}.hero .button{min-width:205px}.hero-side-note{display:none}.hero-bottom{bottom:22px}.hero-caption{max-width:130px;line-height:1.7}.scroll-cue{gap:8px}.scroll-cue i{height:30px}.hero-outline{font-size:130px;right:-5%;bottom:4%}
+.intro-grid,.intro-content,.about-intro-grid,.approach-grid,.practitioner-grid,.maya-grid,.faq-grid,.booking-grid,.contact-grid,.review-policy-grid{grid-template-columns:1fr;gap:40px}.intro-heading{padding-top:0}.intro-heading h2{font-size:76px;margin-bottom:20px}.intro-aside{max-width:260px}.intro-content{gap:28px}.intro-image-wrap img{height:420px}.intro-text{padding:0}.large-copy{font-size:26px}.section-heading{margin-bottom:42px}.split-heading{display:block}.split-heading h2{font-size:60px;margin-bottom:30px}.heading-side{max-width:100%}.treatment-editorial-grid{grid-template-columns:1fr;gap:50px}.treatment-feature-tall,.treatment-feature-wide{margin-top:0}.treatment-photo,.treatment-feature-tall .treatment-photo,.treatment-feature-wide .treatment-photo{height:390px}.treatment-meta h3{font-size:34px}.treatment-meta p{font-size:11px}.why-section{grid-template-columns:1fr}.why-image{min-height:460px}.why-content{padding:70px 21px}.why-content h2{font-size:72px}.why-lede{margin-bottom:35px}.feature-row{gap:10px}.masonry-preview{grid-template-columns:1fr 1fr;grid-template-rows:300px 220px;gap:15px}.masonry-large{grid-row:span 2}.masonry-small{height:220px}.masonry-offset{margin-left:0}.masonry-preview figcaption{font-size:6px;left:7px;bottom:7px;padding:6px}.review-heading h2{font-size:65px}.review-card{width:300px;min-height:235px;padding:24px}.review-card p{font-size:20px}.review-bottom{align-items:flex-start;flex-direction:column;gap:20px}.maya-photo{padding:0 7% 7% 0}.maya-photo img{height:480px}.maya-copy h2{font-size:80px}.package-row{grid-template-columns:28px 1fr 20px;gap:10px;padding:20px 0}.package-row h3{font-size:25px}.package-row p{grid-column:2;grid-row:2}.package-row>b{grid-column:3;grid-row:1}.faq-grid{gap:35px}.faq-intro h2{font-size:68px}.faq-question{font-size:21px;padding:20px 0}.final-cta{min-height:570px}.final-cta-content{padding:80px 0}.final-cta h2{font-size:82px}.site-footer{padding:65px 21px 22px}.footer-main{grid-template-columns:1fr 1fr;gap:40px 25px;margin-bottom:45px}.footer-brand-block{grid-column:1/-1}.footer-contact{grid-column:1/-1}.footer-bottom{flex-wrap:wrap;line-height:1.8}.footer-bottom span:nth-child(2){display:none}
+.page-hero{min-height:570px;height:75svh}.page-hero-content{padding-bottom:75px}.page-hero h1{font-size:82px}.page-hero-index{bottom:25px;font-size:7px}.about-title h2,.approach-copy h2{font-size:68px}.about-prose{padding-top:0}.about-image-band{height:470px}.about-image-caption{left:7%;bottom:10%}.about-image-caption p{font-size:55px}.practitioner-image img{height:470px}.practitioner-copy h2{font-size:80px}.about-values h2{font-size:57px}.values-grid{grid-template-columns:1fr;gap:30px}.values-grid h3{margin:15px 0 7px}.slim-cta{padding:60px 0}.slim-cta-inner{align-items:flex-start;flex-direction:column}.slim-cta h2{font-size:60px}
+.directory-intro{grid-template-columns:1fr;gap:10px}.directory-intro h2{font-size:65px}.treatment-controls{align-items:flex-start;flex-direction:column}.filter-buttons{gap:6px}.filter-button{padding:9px 12px}.directory-grid{grid-template-columns:1fr;gap:32px}.directory-item{grid-template-columns:.85fr 1.15fr;gap:17px}.directory-item img{height:210px}.directory-item h3{font-size:29px;margin:8px 0}.directory-item p{font-size:10px}.prescription-note{margin-top:65px;padding:27px 24px}.detail-hero-content h1{font-size:76px}.detail-index{display:none}.detail-layout{grid-template-columns:1fr;gap:45px}.detail-aside{position:static;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-bottom:1px solid var(--line);padding-bottom:22px}.detail-aside .eyebrow{grid-column:1/-1}.aside-cta{grid-column:1/-1;margin-top:5px}.detail-intro-block h2{font-size:48px}.detail-content-block{padding:40px 0}.detail-content-block h3{font-size:39px}.detail-callout{padding:24px}.detail-callout p{font-size:20px}
+.gallery-intro h2{font-size:68px}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:220px;gap:12px}.gallery-item-tall{grid-row:span 2}.gallery-item-wide{grid-column:span 2}.gallery-filters{gap:6px}.reviews-page-intro h2{font-size:68px}.review-policy-grid h2{font-size:60px}.booking-intro h2,.contact-details h2{font-size:66px}.form-row{grid-template-columns:1fr;gap:0}.booking-form,.contact-form{padding:25px 21px}.form-heading h3,.contact-form h3{font-size:30px}.booking-steps-grid{grid-template-columns:1fr;gap:30px}.booking-steps-grid h3{margin:12px 0 7px}.map-placeholder-section{padding:0 21px 70px}.map-placeholder{height:390px}.map-placeholder-card{padding:27px 25px}.simple-page-hero{padding:165px 0 75px}.simple-page-hero h1{font-size:82px}.legal-wrap h2{font-size:30px}
+.cursor-dot,.cursor-ring{display:none}
+}
+@media(max-width:390px){.hero h1{font-size:60px}.hero-bottom{font-size:7px}.directory-item{grid-template-columns:1fr}.directory-item img{height:230px}.gallery-grid{grid-auto-rows:180px}.page-hero h1{font-size:70px}}
+
+
+@media (min-width:761px) and (max-width:1180px){
+  :root{--wrap:calc(100% - 80px);--section-space:clamp(95px,10vw,135px)}
+  .site-header{padding-inline:40px}
+  .primary-nav{gap:18px}
+  .primary-nav a{font-size:8px}
+  .brand-copy strong{font-size:8px}
+  .header-cta{min-width:175px;font-size:8px}
+  .intro-grid{grid-template-columns:.75fr 1.25fr;gap:6%}
+  .intro-content{grid-template-columns:1fr;gap:25px}
+  .intro-image-wrap img{height:440px}
+  .treatment-photo{height:390px}
+  .treatment-feature-tall .treatment-photo{height:510px}
+  .treatment-feature-wide .treatment-photo{height:450px}
+  .why-content{padding:80px 45px}
+  .maya-grid{gap:7%}
+  .maya-photo img{height:570px}
+  .footer-main{grid-template-columns:1.2fr .8fr .8fr;gap:35px}
+  .footer-contact{grid-column:2/4}
+  .directory-item{grid-template-columns:1fr;gap:15px}
+  .directory-item img{height:270px}
+  .detail-layout{grid-template-columns:180px 1fr;gap:7%}
+  .booking-grid,.contact-grid{gap:6%}
+}
+@media(max-width:760px){
+  :root{--wrap:calc(100% - 40px);--section-space:78px}
+  body{font-size:14px;line-height:1.8}
+  h1{font-size:clamp(64px,14vw,94px)}
+  h2{font-size:clamp(48px,11vw,72px);line-height:.96}
+  h3{font-size:30px}
+  .section-pad{padding:78px 0}
+  .eyebrow{font-size:9px;letter-spacing:.17em;margin-bottom:21px}
+  .large-copy{font-size:25px;line-height:1.25}
+  .intro-text p:not(.large-copy),.heading-side p,.why-lede,
+  .maya-copy>p:not(.eyebrow):not(.large-copy),.faq-intro>p:not(.eyebrow),
+  .about-prose p:not(.large-copy),.approach-copy>p:last-child,
+  .approach-point p,.detail-content-block>p,.directory-intro>p,
+  .gallery-intro>p:last-child,.booking-intro>p:not(.eyebrow),
+  .contact-details>p:not(.eyebrow):not(.large-copy),.legal-wrap p{
+    font-size:13px;line-height:1.9
+  }
+  .site-header{height:74px;padding:0 20px}
+  .site-header.is-scrolled{height:68px}
+  .hero{height:92svh;min-height:650px}
+  .hero h1{font-size:clamp(62px,14vw,96px);line-height:.86}
+  .hero-lede{font-size:13px;max-width:320px}
+  .hero-actions{gap:20px}
+  .button{min-width:205px;padding:16px 18px;font-size:9px}
+  .intro-grid{gap:28px}
+  .intro-heading h2{font-size:clamp(58px,13vw,80px)}
+  .intro-content{gap:24px}
+  .intro-image-wrap img{height:390px}
+  .intro-aside{font-size:19px}
+  .split-heading h2{font-size:clamp(48px,11vw,68px)}
+  .section-heading{margin-bottom:38px}
+  .treatment-editorial-grid{gap:42px}
+  .treatment-photo,.treatment-feature-tall .treatment-photo,.treatment-feature-wide .treatment-photo{height:clamp(270px,80vw,430px)}
+  .treatment-meta{gap:12px;padding-top:18px;margin-top:16px}
+  .treatment-meta h3{font-size:29px}
+  .treatment-meta p{font-size:11px;line-height:1.7}
+  .round-arrow{width:39px;height:39px;margin-left:5px}
+  .why-image{min-height:430px}
+  .why-content{padding:70px 20px}
+  .why-content h2{font-size:clamp(56px,12vw,78px)}
+  .feature-row{grid-template-columns:27px 1fr 16px;padding:21px 0;gap:12px}
+  .feature-row h3{font-size:13px}
+  .feature-row p{font-size:11px}
+  .masonry-preview{grid-template-rows:260px 190px;gap:12px}
+  .masonry-small{height:190px}
+  .review-card{width:290px;min-height:230px;padding:22px}
+  .review-card p{font-size:19px}
+  .maya-photo img{height:clamp(390px,110vw,520px)}
+  .maya-copy h2{font-size:clamp(64px,14vw,88px)}
+  .package-row{grid-template-columns:25px 1fr 18px;padding:20px 0}
+  .package-row h3{font-size:23px}
+  .package-row p{font-size:10px}
+  .faq-question{font-size:20px;padding:19px 0}
+  .faq-answer p{font-size:12px}
+  .final-cta{min-height:560px}
+  .final-cta h2{font-size:clamp(65px,14vw,92px)}
+  .final-cta-content>p:not(.eyebrow){font-size:12px}
+  .site-footer{padding:58px 20px 22px}
+  .footer-main{grid-template-columns:1fr 1fr;gap:32px 20px}
+  .footer-brand-block{grid-column:1/-1}
+  .footer-contact{grid-column:1/-1}
+  .footer-brand-block>p,.footer-col>a,.footer-col p{font-size:11px}
+  .footer-bottom{font-size:7px}
+  .page-hero{height:72svh;min-height:520px}
+  .page-hero h1{font-size:clamp(64px,14vw,95px)}
+  .page-hero-content{padding-bottom:72px}
+  .page-hero-content>p:last-child{font-size:12px}
+  .page-hero-index{font-size:6px;right:20px;bottom:22px}
+  .about-intro-grid,.approach-grid,.practitioner-grid,.maya-grid,
+  .faq-grid,.booking-grid,.contact-grid{gap:32px}
+  .about-title h2,.approach-copy h2{font-size:clamp(56px,12vw,78px)}
+  .about-image-band{height:440px}
+  .about-image-caption p{font-size:clamp(44px,10vw,60px)}
+  .approach-point{padding:22px 0;gap:15px}
+  .approach-point h3{font-size:29px}
+  .practitioner-image img{height:clamp(390px,110vw,520px)}
+  .practitioner-copy h2{font-size:clamp(65px,14vw,90px)}
+  .about-values h2{font-size:clamp(45px,10vw,64px)}
+  .values-grid{gap:24px}
+  .values-grid h3{font-size:28px}
+  .slim-cta{padding:55px 0}
+  .slim-cta h2{font-size:clamp(48px,11vw,68px)}
+  .slim-cta-inner{gap:25px}
+  .directory-intro h2{font-size:clamp(52px,11vw,74px)}
+  .treatment-controls{gap:18px}
+  .search-field{width:100%}
+  .filter-buttons{width:100%}
+  .filter-button{padding:9px 12px;font-size:8px}
+  .directory-grid{gap:28px}
+  .directory-item{grid-template-columns:.9fr 1.1fr;gap:14px}
+  .directory-item img{height:200px}
+  .directory-item h3{font-size:25px}
+  .directory-item p{font-size:10px;line-height:1.7}
+  .prescription-note{margin-top:55px;padding:24px 20px}
+  .detail-hero-content h1{font-size:clamp(62px,13vw,88px)}
+  .detail-hero-content>p:not(.eyebrow){font-size:12px}
+  .detail-layout{gap:32px}
+  .detail-aside{grid-template-columns:repeat(2,1fr);gap:10px}
+  .detail-aside>a{font-size:9px}
+  .detail-intro-block h2{font-size:clamp(40px,9vw,56px)}
+  .detail-content-block{padding:38px 0}
+  .detail-content-block h3{font-size:clamp(32px,8vw,46px)}
+  .detail-callout p{font-size:18px}
+  .gallery-intro h2{font-size:clamp(52px,11vw,76px)}
+  .gallery-grid{grid-auto-rows:clamp(170px,50vw,245px);gap:10px}
+  .gallery-open span{font-size:6px;left:7px;bottom:7px;padding:5px 7px}
+  .reviews-page-intro h2{font-size:clamp(54px,12vw,78px)}
+  .review-policy-grid h2{font-size:clamp(48px,11vw,68px)}
+  .booking-intro h2,.contact-details h2{font-size:clamp(52px,11vw,76px)}
+  .booking-form,.contact-form{padding:25px 19px}
+  .form-row{grid-template-columns:1fr;gap:0}
+  .form-heading h3,.contact-form h3{font-size:28px}
+  .booking-form label,.contact-form label{font-size:9px}
+  .booking-form input,.booking-form select,.booking-form textarea,
+  .contact-form input,.contact-form select,.contact-form textarea{font-size:13px;padding:12px 0}
+  .booking-steps{padding:55px 0}
+  .booking-steps-grid{grid-template-columns:1fr;gap:24px}
+  .booking-steps-grid h3{font-size:27px}
+  .map-placeholder-section{padding:0 20px 60px}
+  .map-placeholder{height:360px}
+  .map-placeholder-card{max-width:300px;padding:24px 20px}
+  .simple-page-hero{padding:155px 0 65px}
+  .simple-page-hero h1{font-size:clamp(64px,14vw,95px)}
+  .legal-wrap h2{font-size:29px;margin-top:32px}
+  .legal-alert{font-size:11px;padding:18px}
+  .cursor-dot,.cursor-ring{display:none!important}
+}
+@media(max-width:420px){
+  :root{--wrap:calc(100% - 34px)}
+  .hero{min-height:620px}
+  .hero h1{font-size:clamp(57px,13.5vw,70px)}
+  .hero-bottom{font-size:6px}
+  .hero-caption{max-width:110px}
+  .directory-item{grid-template-columns:1fr}
+  .directory-item img{height:235px}
+  .directory-item h3{font-size:29px}
+  .gallery-grid{grid-auto-rows:165px}
+  .package-row h3{font-size:21px}
+  .footer-main{gap:28px 14px}
+}
+@media(prefers-reduced-motion:reduce){
+  .page-loader{display:none!important}
+  .reveal-up{opacity:1!important;transform:none!important}
+}
+

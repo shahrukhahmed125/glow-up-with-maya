@@ -1,0 +1,300 @@
+/* ==========================================================
+   FINAL TYPOGRAPHY + INTERACTION POLISH
+   Keeps the existing visual direction; improves readability.
+   ========================================================== */
+:root{
+  --copy-desktop:17px;
+  --copy-mobile:15.5px;
+  --button-dark-hover:#b18f5d;
+  --button-gold-hover:#282622;
+  --button-outline-hover:#282622;
+}
+
+/* Make normal reading text genuinely comfortable to read. */
+body{font-size:16px;line-height:1.85}
+main p:not(.eyebrow):not(.hero-caption):not(.page-hero-index):not(.loader-caption):not(.loader-percent){
+  font-size:clamp(16px,1.12vw,18px)!important;
+  line-height:1.9!important;
+}
+main p.large-copy{
+  font-size:clamp(29px,2.8vw,43px)!important;
+  line-height:1.22!important;
+}
+main h1{
+  font-size:clamp(82px,9.8vw,158px)!important;
+  line-height:.88!important;
+}
+main h2{
+  font-size:clamp(70px,7.6vw,120px)!important;
+  line-height:.94!important;
+  margin-bottom:34px;
+}
+main h3{
+  font-size:clamp(34px,3.5vw,52px)!important;
+  line-height:1.04!important;
+}
+main h4{
+  font-size:clamp(25px,2.4vw,34px)!important;
+  line-height:1.12!important;
+}
+.hero h1{font-size:clamp(88px,10vw,160px)!important}
+.hero-lede{font-size:clamp(16px,1.25vw,18px)!important;line-height:1.85!important}
+.page-hero h1,.detail-hero-content h1{font-size:clamp(82px,9.4vw,148px)!important}
+.eyebrow{font-size:10px!important;line-height:1.4!important}
+.treatment-meta h3,.directory-item h3{font-size:clamp(31px,3.2vw,47px)!important}
+.faq-question{font-size:clamp(22px,2.2vw,30px)!important}
+
+/* Reliable button fill animation: the label always sits above the fill. */
+.button{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:18px!important;
+  min-height:58px;
+  padding:18px 24px!important;
+  font-size:11px!important;
+  line-height:1.3!important;
+  font-weight:700!important;
+  letter-spacing:.12em!important;
+  text-align:left;
+  border-width:1px!important;
+  border-style:solid!important;
+  transition:color .35s ease,border-color .35s ease,box-shadow .35s ease,transform .35s ease,background-color .35s ease!important;
+  box-shadow:0 0 0 rgba(37,35,33,0);
+}
+.button::before{
+  content:""!important;
+  position:absolute!important;
+  display:block!important;
+  inset:0!important;
+  z-index:0!important;
+  opacity:1!important;
+  background:var(--button-hover-fill)!important;
+  transform:scaleX(0)!important;
+  transform-origin:left center!important;
+  transition:transform .48s cubic-bezier(.22,.61,.36,1)!important;
+  pointer-events:none!important;
+}
+.button > span,.button > b{
+  position:relative!important;
+  z-index:2!important;
+  color:inherit!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+.button > span{flex:1 1 auto;min-width:0}
+.button > b{flex:0 0 auto;font-size:19px!important;font-weight:400!important}
+.button-dark{
+  --button-hover-fill:var(--button-dark-hover);
+  background-color:var(--ink)!important;
+  color:#fff!important;
+  border-color:var(--ink)!important;
+}
+.button-gold{
+  --button-hover-fill:var(--button-gold-hover);
+  background-color:var(--gold)!important;
+  color:#fff!important;
+  border-color:var(--gold)!important;
+}
+.button-outline{
+  --button-hover-fill:var(--button-outline-hover);
+  background-color:transparent!important;
+  color:var(--ink)!important;
+  border-color:var(--gold)!important;
+}
+.button:hover::before,.button:focus-visible::before{transform:scaleX(1)!important}
+.button-dark:hover,.button-dark:focus-visible{
+  background-color:var(--ink)!important;color:#fff!important;border-color:var(--button-dark-hover)!important;
+}
+.button-gold:hover,.button-gold:focus-visible{
+  background-color:var(--gold)!important;color:#fff!important;border-color:var(--gold)!important;
+}
+.button-outline:hover,.button-outline:focus-visible{
+  background-color:transparent!important;color:#fff!important;border-color:var(--ink)!important;
+}
+.button:hover{box-shadow:0 13px 28px rgba(37,35,33,.16)!important}
+.button:active{transform:translateY(1px) scale(.99)!important}
+.button:hover > span,.button:hover > b,
+.button:focus-visible > span,.button:focus-visible > b{
+  color:inherit!important;opacity:1!important;visibility:visible!important;
+}
+.button:hover > b{transform:translate(3px,-2px)}
+.header-cta{min-width:220px}
+
+/* Filters and compact action buttons also keep a readable contrast on hover. */
+.filter-button{
+  color:var(--ink)!important;
+  background:transparent!important;
+  border:1px solid var(--line)!important;
+  transition:background-color .25s,color .25s,border-color .25s,transform .25s!important;
+}
+.filter-button:hover,.filter-button:focus-visible{
+  color:#fff!important;background:var(--ink)!important;border-color:var(--ink)!important;
+}
+.filter-button.is-active{
+  color:#fff!important;background:var(--gold)!important;border-color:var(--gold)!important;
+}
+.filter-button.is-active:hover{
+  color:#fff!important;background:var(--gold-dark)!important;border-color:var(--gold-dark)!important;
+}
+
+/* Premium preloader: soft spotlight, animated monogram and complete progress. */
+.page-loader{
+  isolation:isolate;
+  overflow:hidden;
+  gap:16px!important;
+  background:#f8f6f0!important;
+  color:var(--ink);
+}
+.page-loader::before{
+  content:"";
+  position:absolute;
+  width:min(650px,90vw);
+  aspect-ratio:1;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(197,164,109,.15) 0%,rgba(197,164,109,.055) 34%,transparent 70%);
+  z-index:-1;
+  animation:loader-ambient 3.4s ease-in-out infinite alternate;
+}
+.page-loader::after{
+  content:"";
+  position:absolute;
+  width:min(430px,72vw);
+  aspect-ratio:1;
+  border:1px solid rgba(197,164,109,.12);
+  border-radius:50%;
+  z-index:-1;
+  animation:loader-orbit 18s linear infinite;
+}
+.loader-emblem{
+  position:relative;
+  width:76px!important;height:76px!important;
+  border:1px solid rgba(170,137,87,.75)!important;
+  border-radius:50%;
+  display:grid!important;place-items:center;
+  font-family:var(--serif);
+  font-size:34px!important;
+  color:var(--ink);
+  animation:loader-emblem-pulse 2.4s ease-in-out infinite!important;
+  box-shadow:0 0 0 9px rgba(197,164,109,.055),0 10px 35px rgba(37,35,33,.055);
+}
+.loader-emblem::before{
+  content:"";
+  position:absolute;inset:6px;
+  border:1px solid rgba(197,164,109,.26);
+  border-radius:50%;
+}
+.loader-emblem span{color:var(--gold-dark)!important;font-style:italic}
+.loader-wordmark{
+  font-size:clamp(21px,2.2vw,29px)!important;
+  letter-spacing:.19em!important;
+  margin-top:8px;
+}
+.loader-wordmark i{font-size:10px!important;color:var(--gold-dark)!important}
+.loader-caption{font-size:9px!important;letter-spacing:.25em!important;color:#8e806b!important}
+.loader-progress{
+  width:min(260px,58vw)!important;
+  height:2px!important;
+  margin-top:12px!important;
+  background:#e5ded2!important;
+}
+.loader-progress-fill{
+  background:linear-gradient(90deg,#a98753,#e2c99d,#a98753)!important;
+  animation:loader-progress 1.55s cubic-bezier(.22,.61,.36,1) forwards!important;
+}
+.loader-percent{font-size:8px!important;letter-spacing:.2em!important;color:#938773!important}
+@keyframes loader-ambient{from{transform:scale(.88);opacity:.65}to{transform:scale(1.08);opacity:1}}
+@keyframes loader-orbit{to{transform:rotate(360deg)}}
+@keyframes loader-emblem-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.045)}}
+@keyframes loader-progress{to{transform:scaleX(1)}}
+.page-loader.is-hidden{opacity:0;visibility:hidden;pointer-events:none}
+
+/* Elegant custom cursor on desktop only. */
+@media (hover:hover) and (pointer:fine){
+  html.custom-cursor-enabled,html.custom-cursor-enabled body,
+  html.custom-cursor-enabled a,html.custom-cursor-enabled button,
+  html.custom-cursor-enabled input,html.custom-cursor-enabled select,
+  html.custom-cursor-enabled textarea{cursor:none!important}
+  .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:10020;opacity:0}
+  .cursor-dot{
+    width:7px!important;height:7px!important;border-radius:50%;
+    background:#d8b77e!important;
+    box-shadow:0 0 9px rgba(197,164,109,.95),0 0 24px rgba(197,164,109,.5)!important;
+    transition:opacity .2s;
+  }
+  .cursor-ring{
+    width:42px!important;height:42px!important;
+    display:grid!important;place-items:center;
+    border:1px solid rgba(197,164,109,.9)!important;
+    border-radius:50%;
+    background:rgba(249,247,242,.06)!important;
+    backdrop-filter:blur(4px);
+    box-shadow:0 0 0 5px rgba(197,164,109,.045);
+    transition:width .28s cubic-bezier(.22,.61,.36,1),height .28s cubic-bezier(.22,.61,.36,1),background .28s,border-color .28s,box-shadow .28s;
+    will-change:transform;
+  }
+  .cursor-label{
+    font-family:var(--sans);
+    font-size:7px!important;
+    font-weight:700;
+    letter-spacing:.15em;
+    color:#9b7a4d!important;
+    opacity:0;
+    transform:scale(.75);
+    transition:opacity .2s,transform .2s;
+  }
+  .cursor-ring.is-hover{
+    width:72px!important;height:72px!important;
+    background:rgba(197,164,109,.16)!important;
+    border-color:#c5a46d!important;
+    box-shadow:0 0 0 8px rgba(197,164,109,.07),0 8px 28px rgba(37,35,33,.08);
+  }
+  .cursor-ring.is-hover .cursor-label{opacity:1;transform:scale(1)}
+  .cursor-ring.is-view{
+    width:88px!important;height:88px!important;
+    background:rgba(37,35,33,.86)!important;
+    border-color:rgba(255,255,255,.65)!important;
+  }
+  .cursor-ring.is-view .cursor-label{color:#fff!important;opacity:1;transform:scale(1)}
+}
+@media (hover:none),(pointer:coarse){
+  .cursor-dot,.cursor-ring{display:none!important}
+}
+
+/* Mobile typography: still bold and readable without breaking the layout. */
+@media(max-width:760px){
+  body{font-size:15px;line-height:1.8}
+  main p:not(.eyebrow):not(.hero-caption):not(.page-hero-index):not(.loader-caption):not(.loader-percent){
+    font-size:15.5px!important;line-height:1.85!important;
+  }
+  main p.large-copy{font-size:clamp(24px,6vw,31px)!important;line-height:1.25!important}
+  main h1{font-size:clamp(60px,13vw,94px)!important;line-height:.9!important}
+  main h2{font-size:clamp(49px,10.5vw,72px)!important;line-height:.96!important;margin-bottom:24px}
+  main h3{font-size:clamp(29px,7vw,39px)!important;line-height:1.06!important}
+  main h4{font-size:clamp(23px,5.6vw,29px)!important}
+  .hero h1{font-size:clamp(60px,13vw,94px)!important}
+  .hero-lede{font-size:15.5px!important;line-height:1.8!important}
+  .page-hero h1,.detail-hero-content h1{font-size:clamp(62px,13vw,94px)!important}
+  .treatment-meta h3,.directory-item h3{font-size:clamp(29px,7vw,37px)!important}
+  .faq-question{font-size:clamp(20px,5.2vw,25px)!important}
+  .button{min-height:54px;padding:16px 18px!important;font-size:10px!important;gap:13px!important}
+  .button > b{font-size:17px!important}
+  .header-cta{min-width:0}
+  .loader-emblem{width:68px!important;height:68px!important}
+  .loader-wordmark{font-size:20px!important;letter-spacing:.13em!important}
+  .loader-caption{font-size:8px!important;letter-spacing:.18em!important}
+}
+@media(max-width:380px){
+  main p:not(.eyebrow):not(.hero-caption):not(.page-hero-index):not(.loader-caption):not(.loader-percent){
+    font-size:15px!important;
+  }
+  .button{padding:15px 15px!important;font-size:9px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .page-loader::before,.page-loader::after,.loader-emblem{animation:none!important}
+  .loader-progress-fill{animation:none!important;transform:scaleX(1)!important}
+  .button,.button::before,.cursor-ring{transition:none!important}
+}

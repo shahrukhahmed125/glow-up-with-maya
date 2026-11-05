@@ -1,0 +1,26 @@
+{
+  "project": "Glow Up with Maya",
+  "stack": [
+    "HTML5",
+    "CSS3",
+    "Vanilla JavaScript",
+    "jQuery",
+    "GSAP",
+    "GSAP ScrollTrigger"
+  ],
+  "pages": [
+    "index.html",
+    "about.html",
+    "treatments.html",
+    "treatment-detail.html",
+    "results.html",
+    "reviews.html",
+    "booking.html",
+    "contact.html",
+    "privacy-policy.html",
+    "terms.html"
+  ],
+  "forms_connected": false,
+  "booking_connected": false,
+  "imagery": "Remote illustrative Unsplash images; replace with approved clinic photography before launch."
+}
