@@ -31,13 +31,16 @@
     linear-gradient(0deg,rgba(17,15,14,.56),transparent 48%);
 }
 .hero-3d .hero-inner{
-  perspective:1400px;
+  /* perspective:1400px; */
   transform-style:preserve-3d;
   z-index:4;
+  padding-top:40%;
+  padding-bottom: 80%;
 }
 .hero-3d .hero-copy{
-  max-width:880px;
-  padding-top:38px;
+  /* max-width:880px; */
+  padding-top:0;
+  margin-top:0;
   transform:translateZ(70px);
   transform-style:preserve-3d;
   will-change:transform,opacity;
@@ -45,7 +48,8 @@
 .hero-3d .hero-eyebrow{
   color:#e6c99d!important;
   letter-spacing:.25em!important;
-  margin-bottom:31px!important;
+  margin-bottom:22px!important;
+  line-height:1.4!important;
   text-shadow:0 2px 18px rgba(0,0,0,.3);
 }
 .hero-3d .hero-eyebrow>span{
@@ -55,14 +59,19 @@
 }
 .hero-3d h1{
   max-width:920px;
+  display:block;
   font-size:clamp(88px,10.4vw,166px)!important;
   line-height:.81!important;
   letter-spacing:-.065em!important;
   text-shadow:0 8px 40px rgba(0,0,0,.18);
+  transform:translateY(1px);
 }
 .hero-3d h1 em{
+  display:inline-block;
+  vertical-align:baseline;
   color:#dfc092!important;
   text-shadow:0 4px 28px rgba(223,192,146,.12);
+  transform:translateY(-.03em);
 }
 .hero-3d .hero-lede{
   max-width:510px!important;
